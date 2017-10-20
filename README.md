@@ -65,7 +65,7 @@ this vim configuration is in use. Some of these are language-specific.
 | Keybinding        | Description                                             |
 | ----------------- | ------------------------------------------------------- |
 | W                 | Save the current buffer with sudo.                      |
-| jk                | Equivalent to <Esc>                                     | 
+| jk                | Equivalent to \<Esc>                                    | 
 | :ToggleWhitespace | Turn trailing whitespace highlighting on/off.           |
 | :StripWhitespace  | Delete all trailing whitepsace in the current buffer.   |
 
