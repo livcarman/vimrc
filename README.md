@@ -33,9 +33,8 @@ display properly in Git Bash.
 ### Plugin Installation
 
 The plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug/).
-They're also included in the `bundle` folder (just in case they're ever
-removed from GitHub). You can update them at any time by opening vim and
-running the `:PlugInstall` command.
+Run `:PlugInstall` inside vim to install them. You can update them at any
+time with `:PlugUpdate`.
 
 ### System-Level Dependencies 
 
