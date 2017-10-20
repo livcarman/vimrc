@@ -44,6 +44,7 @@ Plug 'dkasak/gruvbox'                  " (Modified) Gruvbox color scheme
 Plug 'editorconfig/editorconfig-vim'   " Editorconfig support
 Plug 'ntpeters/vim-better-whitespace'  " Highlight trailing whitespace
 Plug 'sheerun/vim-polyglot'            " Extended language support
+Plug 'vim-airline/vim-airline'         " Airline status bar
 
 " End plugin definitions
 call plug#end()
@@ -197,6 +198,12 @@ let g:haskell_indent_after_bare_where = 2  " where (after, bare)
 let g:haskell_indent_do = 3                " do
 let g:haskell_indent_in = 1                " in
 let g:haskell_indent_guard = 2             " guard
+
+" }}}
+
+" Airline {{{
+
+set laststatus=2  " Get airline to work at startup
 
 " }}}
 
