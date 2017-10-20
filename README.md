@@ -21,9 +21,14 @@ ln -s ~/.vim/vimrc ~/.vimrc
 On Windows 10 (using PowerShell):
 
 ```PowerShell
-git clone https://github.com/livcarman/vimrc.git ~/.vim
+git clone https://github.com/livcarman/vimrc.git $HOME\.vim
 cmd /c mklink /h $HOME\_vimrc $HOME\.vim\vimrc
 ```
+
+Note that if you're using Windows, getting color schemes to work properly is a
+bit of a nightmare. I highly suggest that you use Git Bash to run vim, which
+is part of [Git for Windows](https://git-for-windows.github.io); colors will
+display properly in Git Bash.
 
 ### Plugin Installation
 
