@@ -21,18 +21,22 @@ ln -s ~/.vim/vimrc ~/.vimrc
 On Windows 10 (using PowerShell):
 
 ```PowerShell
-git clone https://github.com/livcarman/vimrc.git ~/.vim
+git clone https://github.com/livcarman/vimrc.git $HOME\.vim
 cmd /c mklink /h $HOME\_vimrc $HOME\.vim\vimrc
 ```
 
+Note that if you're using Windows, getting color schemes to work properly is a
+bit of a nightmare. I highly suggest that you use Git Bash to run vim, which
+is part of [Git for Windows](https://git-for-windows.github.io); colors will
+display properly in Git Bash.
+
 ### Plugin Installation
 
-The plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug/),
-by they are already included in the `bundle` folder (just in case they're ever
-removed from GitHub). You can update them at any time by opening vim and
-running the `:PlugInstall` command.
+The plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug/).
+Run `:PlugInstall` inside vim to install them. You can update them at any
+time with `:PlugUpdate`.
 
-### Systen-Level Dependencies 
+### System-Level Dependencies 
 
 This configuration will attempt to set [Hack](https://sourcefoundry.org/hack/)
 as vim's font, falling back to the system's default fonts if Hack is not
@@ -60,7 +64,7 @@ this vim configuration is in use. Some of these are language-specific.
 | Keybinding        | Description                                             |
 | ----------------- | ------------------------------------------------------- |
 | W                 | Save the current buffer with sudo.                      |
-| jk                | Equivalent to <Esc>                                     | 
+| jk                | Equivalent to \<Esc>                                    | 
 | :ToggleWhitespace | Turn trailing whitespace highlighting on/off.           |
 | :StripWhitespace  | Delete all trailing whitepsace in the current buffer.   |
 
