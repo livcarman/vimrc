@@ -25,41 +25,27 @@ git clone https://github.com/livcarman/vimrc.git $HOME\.vim
 cmd /c mklink /h $HOME\_vimrc $HOME\.vim\vimrc
 ```
 
-Note that if you're using Windows, getting color schemes to work properly is a
-bit of a nightmare. I highly suggest that you use Git Bash to run vim, which
-is part of [Git for Windows](https://git-for-windows.github.io); colors will
-display properly in Git Bash.
-
-### Plugin Installation
-
 The plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug/).
 Run `:PlugInstall` inside vim to install them. You can update them at any
 time with `:PlugUpdate`.
 
-### System-Level Dependencies 
+### Font Installation 
 
 This configuration will attempt to set [Hack](https://sourcefoundry.org/hack/)
 as vim's font, falling back to the system's default fonts if Hack is not
 available. You can download Hack for free from its homepage (linked above),
 but it's not a hard dependency -- this is purely cosmetic.
 
-The Elm plugin has some system-level dependencies and will yell at you if
-they're missing. Install a recent version of [Node.js](https://nodejs.org) and
-run:
+## Windows Compatibility
 
-```bash
-npm install -g elm elm-test elm-oracle elm-format
-```
+Things more or less just work on Windows, but getting color schemes to work
+properly is a bit of a nightmare. I highly suggest that you use Git Bash to
+run vim, which is part of [Git for Windows](https://git-for-windows.github.io).
 
-Of course, if you're an Elm developer, you probably had those installed
-already.
+Colors will display properly in Git Bash, but will not in PowerShell, cmder,
+the standard command prompt, and all the other usual suspects..
 
 ## Custom Commands & Keybindings
-
-These are all of the extra commands and keybindings that are available when
-this vim configuration is in use. Some of these are language-specific.
-
-### General
 
 | Keybinding        | Description                                             |
 | ----------------- | ------------------------------------------------------- |
@@ -67,16 +53,4 @@ this vim configuration is in use. Some of these are language-specific.
 | jk                | Equivalent to \<Esc>                                    | 
 | :ToggleWhitespace | Turn trailing whitespace highlighting on/off.           |
 | :StripWhitespace  | Delete all trailing whitepsace in the current buffer.   |
-
-### Elm
-
-| Keybinding     | Description                                                |
-| -------------- | ---------------------------------------------------------- |
-| \<Leader>m     | Compile the current buffer.                                |
-| \<Leader>b     | Compile the Main.elm file in the project.                  |
-| \<Leader>t     | Run the tests of the current buffer or 'tests/TestRunner'. |
-| \<Leader>r     | Open an elm repl in a subprocess.                          |
-| \<Leader>e     | Show the detail of the current error or warning.           |
-| \<Leader>d     | Show the type and docs for the word under the cursor.      |
-| \<Leader>w     | Open the docs web page for the word under the cursor.      |
 

@@ -42,10 +42,8 @@ call plug#begin('~/.vim/bundle')
 " Use :PlugInstall to install these plugins
 Plug 'morhetz/gruvbox'                 " Gruvbox color scheme
 Plug 'editorconfig/editorconfig-vim'   " Editorconfig support
-Plug 'elmcast/elm-vim'                 " Elm language support
-Plug 'neovimhaskell/haskell-vim'       " Haskell language support
 Plug 'ntpeters/vim-better-whitespace'  " Highlight trailing whitespace
-Plug 'othree/html5.vim'                " HTML5 + inline SVG support
+Plug 'sheerun/vim-polyglot'            " Extended language support
 
 " End plugin definitions
 call plug#end()
