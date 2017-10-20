@@ -37,7 +37,7 @@ They're also included in the `bundle` folder (just in case they're ever
 removed from GitHub). You can update them at any time by opening vim and
 running the `:PlugInstall` command.
 
-### Systen-Level Dependencies 
+### System-Level Dependencies 
 
 This configuration will attempt to set [Hack](https://sourcefoundry.org/hack/)
 as vim's font, falling back to the system's default fonts if Hack is not
