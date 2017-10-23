@@ -40,7 +40,7 @@ augroup END
 call plug#begin('~/.vim/bundle')
 
 " Use :PlugInstall to install these plugins
-Plug 'dkasak/gruvbox'                  " (Modified) Gruvbox color scheme
+Plug 'dracula/vim'                     " Dracula color scheme
 Plug 'editorconfig/editorconfig-vim'   " Editorconfig support
 Plug 'ntpeters/vim-better-whitespace'  " Highlight trailing whitespace
 Plug 'sheerun/vim-polyglot'            " Extended language support
@@ -67,7 +67,7 @@ endif
 
 " Set the color scheme (but don't complain if it's not installed)
 try
-  colorscheme gruvbox
+  colorscheme dracula
 catch
 endtry
 
