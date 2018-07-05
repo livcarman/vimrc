@@ -40,7 +40,7 @@ augroup END
 call plug#begin('~/.vim/bundle')
 
 " Use :PlugInstall to install these plugins
-Plug 'dracula/vim'                     " Dracula color scheme
+Plug 'morhetz/gruvbox'                 " Gruvbox color scheme
 Plug 'editorconfig/editorconfig-vim'   " Editorconfig support
 Plug 'ntpeters/vim-better-whitespace'  " Highlight trailing whitespace
 Plug 'sheerun/vim-polyglot'            " Extended language support
@@ -67,7 +67,7 @@ endif
 
 " Set the color scheme (but don't complain if it's not installed)
 try
-  colorscheme dracula
+  colorscheme gruvbox
 catch
 endtry
 
@@ -174,30 +174,6 @@ set hlsearch   " Higlight matches
 set ignorecase " Ignore case when searching
 set smartcase  " Override ignore case if the search term is cased
 set magic      " Use regular expressions
-
-" }}}
-
-" Haskell (neovimhaskell/haskell-vim) {{{
-
-" Syntax highlighting
-let g:haskell_enable_quantification = 1   " `forall`
-let g:haskell_enable_recursivedo = 1      " `mdo` and `rec`
-let g:haskell_enable_arrowsyntax = 1      " `proc`
-let g:haskell_enable_pattern_synonyms = 1 " `pattern`
-let g:haskell_enable_typeroles = 1        " type roles
-let g:haskell_enable_static_pointers = 1  " `static`
-let g:haskell_backpack = 1                " backpack keywords
-
-" Indentation
-let g:haskell_indent_if = 3                " if
-let g:haskell_indent_case = 2              " case
-let g:haskell_indent_let = 4               " let
-let g:haskell_indent_where = 6             " where (after)
-let g:haskell_indent_before_where = 2      " where (before)
-let g:haskell_indent_after_bare_where = 2  " where (after, bare)
-let g:haskell_indent_do = 3                " do
-let g:haskell_indent_in = 1                " in
-let g:haskell_indent_guard = 2             " guard
 
 " }}}
 

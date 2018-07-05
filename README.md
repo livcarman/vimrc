@@ -1,7 +1,6 @@
 # Vim Configuration
 
-This is my personal vim configuration, geared toward web development with
-Haskell and Elm.
+This is my personal vim configuration.
 
 I personally don't like to work with IDEs and that's reflected in how
 minimal this configuration is.
