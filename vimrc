@@ -40,11 +40,11 @@ augroup END
 call plug#begin('~/.vim/bundle')
 
 " Use :PlugInstall to install these plugins
-Plug 'arcticicestudio/nord-vim'        " Nord color scheme
-Plug 'editorconfig/editorconfig-vim'   " Editorconfig support
-Plug 'ntpeters/vim-better-whitespace'  " Highlight trailing whitespace
-Plug 'sheerun/vim-polyglot'            " Extended language support
-Plug 'vim-airline/vim-airline'         " Airline status bar
+Plug 'dracula/vim', { 'as': 'dracula' } " Dracula color scheme
+Plug 'editorconfig/editorconfig-vim'    " Editorconfig support
+Plug 'ntpeters/vim-better-whitespace'   " Highlight trailing whitespace
+Plug 'sheerun/vim-polyglot'             " Extended language support
+Plug 'vim-airline/vim-airline'          " Airline status bar
 
 " End plugin definitions
 call plug#end()
@@ -67,7 +67,7 @@ endif
 
 " Set the color scheme (but don't complain if it's not installed)
 try
-  colorscheme nord
+  colorscheme dracula
 catch
 endtry
 
