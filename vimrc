@@ -40,11 +40,12 @@ augroup END
 call plug#begin('~/.vim/bundle')
 
 " Use :PlugInstall to install these plugins
-Plug 'arcticicestudio/nord-vim'        " Nord color scheme
+Plug 'dracula/vim',{'as':'dracula'}    " Dracula color scheme
 Plug 'editorconfig/editorconfig-vim'   " Editorconfig support
 Plug 'ntpeters/vim-better-whitespace'  " Highlight trailing whitespace
 Plug 'sheerun/vim-polyglot'            " Extended language support
 Plug 'vim-airline/vim-airline'         " Airline status bar
+Plug 'vim-airline/vim-airline-themes'  " Airline themes
 
 " End plugin definitions
 call plug#end()
@@ -67,7 +68,7 @@ endif
 
 " Set the color scheme (but don't complain if it's not installed)
 try
-  colorscheme nord
+  colorscheme vim
 catch
 endtry
 
@@ -77,9 +78,9 @@ if has("mac") || has("macunix")
 elseif has("win16") || has("win32")
     set gfn=Hack:h12,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h12
 elseif has("gui_gtk2")
-    set gfn=Hack\ 12,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 12
+    set gfn=Hack:h12,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h12
 elseif has("linux")
-    set gfn=Hack\ 12,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 12
+    set gfn=Hack:h12,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h12
 elseif has("unix")
     set gfn=Monospace\ 12
 endif
@@ -179,7 +180,9 @@ set magic      " Use regular expressions
 
 " Airline {{{
 
-set laststatus=2  " Get airline to work at startup
+set laststatus=2                  " Get airline to work at startup
+let g:airline_theme='minimalist'  " Set theme
+let g:airline_powerline_fonts = 1 " Set proper font glyphs
 
 " }}}
 
