@@ -32,8 +32,10 @@ time with `:PlugUpdate`.
 
 This configuration will attempt to set [Hack](https://sourcefoundry.org/hack/)
 as vim's font, falling back to the system's default fonts if Hack is not
-available. You can download Hack for free from its homepage (linked above),
-but it's not a hard dependency -- this is purely cosmetic.
+available. You should use a version of Hack that's been patched for Powerline,
+available [here](https://github.com/powerline/fonts/tree/master/Hack).
+
+Hack is not a hard dependency -- this is purely cosmetic.
 
 ## Windows Compatibility
 
